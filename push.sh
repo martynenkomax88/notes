@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /Users/maksmarty/notes/
+cd /home/maks/notes/
 git pull origin
 git add .
 git commit -m "x"
