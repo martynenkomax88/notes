@@ -1,7 +1,9 @@
 ---
 id: enumeration
 aliases: []
-tags: []
+tags:
+  - "[oscp,"
+  - nmap,](oscp/1728929611-LCFB.md)
 ---
 
 2024-10-14
