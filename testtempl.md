@@ -6,6 +6,7 @@ tags: []
 ![test.png](assets/imgs/test.png)
 sdffgklj
 
+![](assets/2024-10-15-23-13-22.png)
 ---
 id: hack
 aliases: []
