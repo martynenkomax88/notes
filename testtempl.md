@@ -3,7 +3,7 @@ id: testtempl
 aliases: []
 tags: []
 ---
-
+![test.png](assets/imgs/test.png)
 sdffgklj
 
 ---
