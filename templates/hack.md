@@ -2,6 +2,15 @@
 ### {{title}}
 * {{date}}{{time}}
 
+
+## tags: 
+
+### techniques
+
+###  
+----------
+
+
 ## Enumeration
 
   
@@ -13,7 +22,7 @@
 ## Lateral movement
 
   
-  ### Findings 
+  
 
 
 ## Privilege escalation
