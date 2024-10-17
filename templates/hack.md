@@ -1,11 +1,20 @@
----
-id: hack
-aliases: []
-tags: []
----
 
 ### {{title}}
 * {{date}}{{time}}
 
+## Enumeration
 
+  
+
+  ### Services
+
+
+
+## Lateral movement
+
+  
+  ### Findings 
+
+
+## Privilege escalation
 
