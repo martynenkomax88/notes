@@ -3,13 +3,17 @@ id: services
 aliases: []
 tags: []
 ---
-
-## Redis 
+## Services
+  [[#Redis /6379]]
+  
+  
+## Redis /6379
   ### Enumeration
-    ```nmap --script redis-info -sV -p 6379 <IP>
-       msf> use auxiliary/scanner/redis/redis_server
-    ```
-    
-    
+    nmap --script redis-info -sV -p 6379 <IP>
+    msf> use auxiliary/scanner/redis/redis_server 
+ 
+
+
+
     
 

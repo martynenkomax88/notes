@@ -16,15 +16,12 @@ tags: []
 ###  
 ----------
 
-
 ## Enumeration
 
+  `6379/tcp open  redis   syn-ack ttl 61 Redis key-value store 4.0.14` 
   
 
-  ### Services
-
-
-
+  
 ## Lateral movement
 
   
