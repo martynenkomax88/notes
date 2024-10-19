@@ -7,7 +7,7 @@
 
 ### techniques
 
-###  
+### vulnerabilities 
 ----------
 
 
