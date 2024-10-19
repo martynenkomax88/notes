@@ -35,7 +35,9 @@ tags: []
 ## Lateral movement
 
   
-  
+1) aaaa
+- [~] 2) 2. 2. bbb:
+
 
 
 ## Privilege escalation
