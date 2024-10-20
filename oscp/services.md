@@ -40,6 +40,7 @@ BGSAVE
 ```
 2. **[Redis-rogue-server.py](https://github.com/n0b0dyCN/redis-rogue-server)** 
 > Sets a redis server which operates as a master and sends commands and writes to files to target with partial or total resynchronization 
+[Source](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf)
 ```redis
 rogue server
 1. PING - test if a connection is still alive
@@ -51,7 +52,6 @@ master and slave
 the master (partial or full)
 +CONTINUE <replid> 0
 ```
-[Source](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf)
 
 
 > [!note]
