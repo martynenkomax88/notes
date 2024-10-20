@@ -54,7 +54,7 @@ the master (partial or full)
 > Compile the .so on your machine
 > run `redis-cli -h <IP> flushall` to remove all changes otherwise it can give an error  
 
-```
+
 
 3. **ssh** :
 >Generate a ssh public-private key pair on your pc: 
