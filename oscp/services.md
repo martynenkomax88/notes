@@ -19,6 +19,8 @@ tags: []
 > [Cheat-Sheet](https://lzone.de/#/LZone%20Cheat%20Sheets/DevOps%20Services/Redis)
 
 ### Exploitation
+> [!TIP]
+> 
 > #### Authentication:
 > ***Brute force***
 
