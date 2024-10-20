@@ -37,5 +37,6 @@ tags: []
 
 ## Privilege escalation
 
-`redis-status` is located in `/usr/local/bin/` --> can be run as root and is asking for input (Auth key)
-
+`redis-status` is located in `/usr/local/bin/` 
+--> can be run as root and is asking for input (Auth key) 
+--> the bin is vulnerable to bo --> segfault on large input 
