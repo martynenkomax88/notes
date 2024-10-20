@@ -33,9 +33,9 @@ tags: []
 
 ## Exploitation
 > **[Redis-rogue-server.py](https://github.com/n0b0dyCN/redis-rogue-server)**  
-> [!IMPORTANT] 
 
 
 ## Privilege escalation
 
+`redis-status` is located in `/usr/local/bin/` --> can be run as root and is asking for input (Auth key)
 
