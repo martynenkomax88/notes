@@ -23,7 +23,9 @@ tags: []
 > ***Brute force***
 
 1. **Easy**:
-> [!IMPORTANT] Must have rights to access the dir / Must know the web root dir
+> [!IMPORTANT] 
+>Must have rights to access the dir / Must know the web root dir
+
 ```redis 
 CONFIG SET
 1. Change database file location
