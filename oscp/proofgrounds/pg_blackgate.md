@@ -19,25 +19,21 @@ tags: []
 
 ## Enumeration
 
-  ### Info gathering   
-
-
-
-  ### Services
-
-   `$nmap : 6379/tcp open  redis   syn-ack ttl 61 Redis key-value store 4.0.14`
-   [[services#redis-6379|Services ❯ Redis /6379]] 
-
-## Exploitation
-
-
-
-## Lateral movement
+### Info gathering   
+##### Open ports:
+> `ssh /22`
+> `redis /6379`
 
   
-1) aaaa
-- [~] 2) 2. 2. bbb:
 
+### Services
+
+>   `$nmap : 6379/tcp open  redis   syn-ack ttl 61 Redis key-value store 4.0.14`
+>   [[services#redis-6379|Services ❯ Redis /6379]] 
+
+## Exploitation
+> **[Redis-rogue-server.py](https://github.com/n0b0dyCN/redis-rogue-server)**  
+> [!IMPORTANT] 
 
 
 ## Privilege escalation

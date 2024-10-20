@@ -8,20 +8,18 @@ tags: []
   
   
 ## Redis /6379
-### Enumeration:
-    
+> Redis is an open source, in-memory data structure store, used as a database, cache and message broker.
+
+### Enumeration:    
 ```bash
    nmap --script redis-info -sV -p 6379 <IP>
    msf> use auxiliary/scanner/redis/redis_server
 i ```
-
 ### Commands:
-[ Cheat-Sheet](https://lzone.de/#/LZone%20Cheat%20Sheets/DevOps%20Services/Redis)
+> [Cheat-Sheet](https://lzone.de/#/LZone%20Cheat%20Sheets/DevOps%20Services/Redis)
 
 ### Exploitation
 
-1. ddd
-2. fff
-  3.
+
    
 
