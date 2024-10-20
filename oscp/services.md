@@ -48,7 +48,9 @@ the master (partial or full)
 +CONTINUE <replid> 0
 [Source](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf)
 ```
->> [!IMPORTANT] Compile the .so on your machine
+> [!IMPORTANT]
+>  Compile the .so on your machine
+>  run `redis-cli -h <IP> flushall` to remove all changes otherwise it can give an error 
 
 3. **ssh** :
 > Generate a ssh public-private key pair on your pc: 
