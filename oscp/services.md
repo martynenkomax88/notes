@@ -21,8 +21,7 @@ tags: []
 ### Exploitation
 > [!TIP]
 > 
-> #### Authentication:
-> ***Brute force***
+> #### Authentication: ***Brute force***
 
 1. **Easy**:
 > [!IMPORTANT] 
@@ -51,8 +50,9 @@ master and slave
 3. PSYNC/SYNC <replid> - synchronize slave state with
 the master (partial or full)
 +CONTINUE <replid> 0
-[Source](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf)
 ```
+[Source](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf)
+
 
 > [!note]
 > Compile the .so on your machine
