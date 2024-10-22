@@ -1,7 +1,10 @@
 ---
 id: reverseshell
 aliases: []
-tags: []
+tags:
+  - exploitation
+  - shell
+  - c2
 ---
 
 

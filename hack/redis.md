@@ -1,7 +1,10 @@
 ---
 id: services
 aliases: []
-tags: []
+tags:
+  - exploitation
+  - services
+  - port/6379
 ---
 # Services 
 [[#Redis /6379]]
