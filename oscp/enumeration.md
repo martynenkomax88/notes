@@ -1,7 +1,9 @@
 ---
 id: enumeration
 aliases: []
-tags: []
+tags:
+  - scan
+  - discovery
 ---
 
 2024-10-14

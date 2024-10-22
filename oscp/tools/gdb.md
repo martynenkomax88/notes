@@ -1,10 +1,11 @@
 ---
 id: gdb
-aliases: []
+aliases:
+  - gef
 tags:
   - tools
+  - debuging
 ---
-
 ## GEF
 > Installation:
 ```bash
