@@ -23,6 +23,7 @@ You can automate this further with
 > [!NOTE]
 > The problem with this is that if you connect to the same computer with multiple instances of ssh, or if someone else is using the port, you don't get the forwarding.
 
-If you haven't enabled a remote forwarding from the start, you can do it on an existing ssh session. Type
+> [!NOTE]
+> If you haven't enabled a remote forwarding from the start, you can do it on an existing ssh session. Type
 `Enter ~C Enter -R 22042:localhost:22 Enter` 
 See “Escape characters” in the manual for more information.
