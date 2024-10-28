@@ -1,7 +1,10 @@
 ---
 id: rop
-aliases: []
-tags: []
+aliases:
+  - return_oriented_programing
+tags:
+  - binary_exploitation
+  - binary
+  - return_to
 ---
-
 
