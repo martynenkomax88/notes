@@ -7,7 +7,10 @@ tags:
   - execution_flow
   - registers
 ---
+> [!NOTE]
+> Windows x64 calling convention uses RCX, RDX, R8, and R9 for the first four integer or pointer arguments, with additional arguments passed on the stack. The return value is placed in RAX.
 
+# Unix
 ## The Caller’s Rules
 >The caller should adhere to the following rules when invoking a subroutine:
 1. Before calling a subroutine, the caller should save the contents of certain registers that are designated
@@ -35,7 +38,7 @@ then nothing is pushed onto the stack in that step. Likewise, programmers (and c
 the results they care about out of the caller-saved registers in steps 1 and 6 to prevent excess pushes and
 pops.
 
-## 1.4 The Callee’s Rules
+## The Callee’s Rules
 >The definition of the subroutine should adhere to the following rules:
 1. Allocate local variables by using registers or making space on the stack. Recall, the stack grows
 down, so to make space on the top of the stack, the stack pointer should be decremented. The
