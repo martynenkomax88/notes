@@ -15,7 +15,7 @@ caller-saved. The caller-saved registers are r10, r11, and any registers that pa
 you want the contents of these registers to be preserved across the subroutine call, push them onto
 the stack.
 2. To pass parameters to the subroutine, we put up to six of them into registers <mark>***(in order: rdi, rsi,
-rdx, rcx, r8, r9).***<mark> If there are more than six parameters to the subroutine, then push the rest onto
+rdx, rcx, r8, r9).***<> If there are more than six parameters to the subroutine, then push the rest onto
 the stack in reverse order (i.e. last parameter first) – since the stack grows down, the first of the
 extra parameters (really the seventh parameter) parameter will be stored at the lowest address (this
 inversion of parameters was historically used to allow functions to be passed a variable number of
