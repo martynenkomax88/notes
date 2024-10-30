@@ -10,3 +10,6 @@ tags:
 ## Usage:
 
 
+
+## Wordlidts:
+`https://github.com/danielmiessler/SecLists` 
