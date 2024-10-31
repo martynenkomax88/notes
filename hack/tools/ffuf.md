@@ -9,7 +9,7 @@ tags:
 
 ## Usage:
 
+`ffuf -c -u <url/FUZZ> -w <wordlist(subdomains, files, directories [#Wordlists](#wordlists) )>` 
 
-
-## Wordlidts:
+## Wordlists:
 `https://github.com/danielmiessler/SecLists` 
