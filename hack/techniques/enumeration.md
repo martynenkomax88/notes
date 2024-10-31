@@ -14,4 +14,5 @@ tags:
 ## Web enumeration:
   - Directories and subdomains fuzzing
     - [ffuf](hack/tools/ffuf.md)
-    
+
+
