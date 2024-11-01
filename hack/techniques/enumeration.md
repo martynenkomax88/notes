@@ -12,7 +12,9 @@ tags:
  
  
 ## Web enumeration:
-  - Directories and subdomains fuzzing
+  ### Directories and subdomains fuzzing
     - [ffuf](hack/tools/ffuf.md)
-
+  
+  ### Vulnerability discovery:
+    - [[nikto]]
 
