@@ -7,7 +7,6 @@ tags: []
 
 ## Example of vulnerable code on different programming languages:
 
-
 • in PHP:
 
 A common mistake is not validating the file type before uploading it to the server. Attackers can exploit this by uploading a malicious file with a fake extension that can be executed on the server. The following code shows an example of how not to validate the file type:
