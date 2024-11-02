@@ -15,5 +15,5 @@ Find binaries using `sudo -l` or with [[exploit_setuid_binaries#find-setuid|find
    - Run linpeas on victim machine
 
 ## Crontab:
-  - [[crontab]]
+  - [[crontab]] !to make
    
