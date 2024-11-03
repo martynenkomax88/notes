@@ -1,7 +1,7 @@
 ---
-id: Content-Type_restriction_bypass
+id: webshell_upload_Content-Type_restriction_bypass
 aliases:
-  - file_upload_expliitation
+  - file_upload_exploitation
 tags:
   - web
   - shell_delivery
