@@ -1,7 +1,10 @@
 ---
 id: user_management_linux
 aliases: []
-tags: []
+tags:
+  - linux
+  - server administration
 ---
 
-
+### List all users:
+  - `cat /etc/passwd` 

@@ -1,8 +1,14 @@
 ---
 id: file_upload
 aliases: []
-tags: []
+tags:
+  - vulnerabilities
+  - web
 ---
+## How to exploit:
+  - [[webshell_upload_Content-Type_restriction_bypass]]
+  - [[web_shell_upload_via_extension_blacklist_bypass]]
+ 
 ## How the server handles file requests:
  The process for handling these static files is still largely the same as before. At some point, the server parses the path in the request to identify the file extension. It then uses this to determine the type of the file being requested, typically by comparing it to a list of preconfigured mappings between extensions and MIME types. What happens next depends on the file type and the server's configuration.
 
