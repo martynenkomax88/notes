@@ -32,3 +32,7 @@ e)jhkh:
 2. 2. 2. 2. 2. 2. 2. 2. 2. ggggggg:
   - - - - 
 
+![img.png](/assets/2024-11-04-20-24-45.png)
+lkhlj
+
+khjkjhjkh
