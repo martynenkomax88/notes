@@ -39,4 +39,4 @@ For example, we can navigate to common folders where we normally find interestin
 
 grep --color=auto -rnw -iIe "PASSW\|PASSWD\|PASSWORD\|PWD" --color=always 2>/dev/nul  
 
-
+![[Pasted image 20241104122040.png]]
