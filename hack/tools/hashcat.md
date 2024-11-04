@@ -216,3 +216,5 @@ shuf dict.txt | pp64.bin --pw-min=8 | hashcat -a 0 -m #type -w 4 -O hashes.txt -
 Reference:  
 https://www.netmux.com/blog/purple-rain-attack
 
+## All hash modes
+https://hashcat.net/wiki/doku.php?id=example_hashes

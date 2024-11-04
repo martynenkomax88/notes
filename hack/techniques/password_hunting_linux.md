@@ -46,8 +46,8 @@ locate '*.php'
 ## Cracking found hashes:
   - To prep for cracking this hash, we can copy the contents of the passwd.dav file (without the username and colon!) and paste it into a TXT file on our attacker machine.
 
-  - Once that is done, we can use [[hashcat with the following command to find the cracking mode for this type of hash:
+  - Once that is done, we can use [[hashcat]] with the following command to find the cracking mode for this type of hash:
 
 `hashcat -h | grep -i '$apr'`
 
-
+  - Imagine the output [[hashcat#]] we found is 1600  
