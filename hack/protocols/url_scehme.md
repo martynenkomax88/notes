@@ -2,6 +2,7 @@
 id: url_scehme
 aliases: []
 tags:
+  - protocols/http
   - http
   - url
   - web
