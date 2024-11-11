@@ -12,10 +12,11 @@ tags:
 
 ``` C
 socket (AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
-bind (3,
-    {sa_family=AF_INET, sin_portshtons (80),
-    sin_addr=inet_addr("0.0.0.0")3,
-    1)                                    = 0
+bind / connect (3,                        //bind for local and connect for remote connections
+    {sa_family=AF_INET, 
+    sin_port=htons (80),
+    sin_addr=inet_addr("0.0.0.0")},
+    16)                                   = 0
 listen (3, 0)                             = 0
 accept (3, NULL, NULL)                    = 4
 ```
