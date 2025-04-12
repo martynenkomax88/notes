@@ -1,7 +1,9 @@
 ---
 id: setup_github_actions
-aliases: []
+aliases:
+  - "tags: -"
 tags: []
 ---
-
-
+---
+id: setup_github_actions
+aliases: tags: - 
