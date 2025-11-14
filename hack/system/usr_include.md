@@ -1,7 +1,9 @@
 ---
 id: usr_include
 aliases: []
-tags: []
+tags:
+  - search syscalls arguments
+  - syscall
 ---
-
+lk
 
