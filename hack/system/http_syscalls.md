@@ -42,4 +42,7 @@ In order to handle multiple connections a loop with `fork()` is used:
   - The parent is closing its specific connection since the handling of the process is passed to the child
   - The parent is doing `accept()` and fork again to create another child connection 
   - Different logic and daat can be handled by the subconnections
+ 
+
+![2025-11-15-at-15-31-40.avif](assets/2025-11-15-at-15-31-40.avif)
 
