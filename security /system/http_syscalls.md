@@ -47,3 +47,9 @@ In order to handle multiple connections a loop with `fork()` is used:
 ![2025-11-15-at-15-31-40.avif](assets/2025-11-15-at-15-31-40.avif)
 
 ![2025-11-17-at-00-39-03.avif](assets/2025-11-17-at-00-39-03.avif)
+
+![2025-11-17-at-01-55-56.avif](assets/2025-11-17-at-01-55-56.avif)
+
+
+
+
