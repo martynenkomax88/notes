@@ -34,6 +34,12 @@ write(4,
 
 ![Understanding HTTP at the lowest level](assets/2024-11-10-at-22-08-27.avif)
 
+![Sockaddr_in.avif](assets/Sockaddr_in.avif)
+
+![Listen.avif](assets/Listen.avif)
+
+![Accept.avif](assets/Accept.avif)
+
 
 ### Multiprocessing
 
@@ -41,15 +47,6 @@ In order to handle multiple connections a loop with `fork()` is used:
   - The process is doubled --> child returns 0 and parent returns child's PID
   - The parent is closing its specific connection since the handling of the process is passed to the child
   - The parent is doing `accept()` and fork again to create another child connection 
-  - Different logic and daat can be handled by the subconnections
+  - Different logic and data can be handled by the sub connections
  
-
-![2025-11-15-at-15-31-40.avif](assets/2025-11-15-at-15-31-40.avif)
-
-![2025-11-17-at-00-39-03.avif](assets/2025-11-17-at-00-39-03.avif)
-
-![2025-11-17-at-01-55-56.avif](assets/2025-11-17-at-01-55-56.avif)
-
-
-
-
+![Fork multiprocessing.avif](assets/Fork%20multiprocessing.avif)
