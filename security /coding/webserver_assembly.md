@@ -1,7 +1,11 @@
 ---
 id: webserver_assembly
 aliases: []
-tags: []
+tags:
+  - assembly
+  - webserver
+  - syscall
+  - network
 ---
 
 
