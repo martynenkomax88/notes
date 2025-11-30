@@ -41,12 +41,55 @@ write(4,
 ![Accept.avif](assets/Accept.avif)
 
 
-### Multiprocessing
+## Multiprocessing
 
-In order to handle multiple connections a loop with `fork()` is used:
-  - The process is doubled --> child returns 0 and parent returns child's PID
-  - The parent is closing its specific connection since the handling of the process is passed to the child
-  - The parent is doing `accept()` and fork again to create another child connection 
-  - Different logic and data can be handled by the sub connections
- 
+1. ### Server setup
+#### The server creates a listening socket (socket()).
+- Binds it to an address ( bind()).
+- Marks it as passive (listen()).
+
+2. ### Accept loop
+#### The server enters a loop:
+```C
+for (;;) {                                                    
+conn_fd = accept(listen_fd, ...);  // wait for a client   
+    pid = fork();                      // create child process
+} 
+```
+
+3. ### Fork call
+#### Parent process (pid > 0):
+
+- Continues the loop.
+- Closes conn_fd (because the child will handle it).
+- Keeps listen_fd open to accept more clients.
+- Child process (pid == 0):
+- Closes listen_fd (child doesn’t need to accept new clients).
+- Uses conn_fd to communicate with the connected client.
+- Handles the request (read/write).
+- Closes conn_fd when done.
+- Calls exit() to terminate.
+
+4. ### Process lifecycle
+#### Parent keeps running, accepting new clients.
+- Each client gets its own child process.
+- When the child exits, the parent should wait() or handle SIGCHLD to reap zombies.
+```
+
+Client connects
+   ↓
+accept() returns conn_fd
+   ↓
+fork()
+   ├─ Parent (pid > 0):
+   │    close(conn_fd)
+   │    loop back to accept()
+   │
+   └─ Child (pid = 0):
+        close(listen_fd)
+        handle client via conn_fd
+        close(conn_fd)
+        exit()
+```
+
 ![Fork multiprocessing.avif](assets/Fork%20multiprocessing.avif)
